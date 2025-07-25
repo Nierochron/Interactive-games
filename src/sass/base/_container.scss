@@ -1,0 +1,18 @@
+.container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  // outline: dotted red;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    max-width: 668px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: none;
+    width: 1110px;
+  }
+}

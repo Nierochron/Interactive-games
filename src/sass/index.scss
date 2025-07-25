@@ -1,3 +1,22 @@
-@use './common' as *;
-@use './example' as *;
+@use './base/common' as *;
+@use './base/container' as *;
+@use './base/reset' as *;
+@use './utils/animation' as *;
+@use './utils/mixins' as *;
+@use './utils/variable' as *;
+
 @use './components/header' as *;
+@use './components/born-year' as *;
+@use './components/guess-number' as *;
+@use './components/rock-paper-scissors' as *;
+@use './components/calculator' as *;
+@use './components/time-calculator' as *;
+@use './components/dinosaur-google' as *;
+@use './components/football' as *;
+@use './components/max-number' as *;
+@use './components/team' as *;
+@use './components/scientists' as *;
+@use './components/footer' as *;
+
+@use './components/main-title' as *;
+@use './components/modal' as *;
