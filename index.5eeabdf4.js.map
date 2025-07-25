@@ -1,0 +1,1 @@
+{"mappings":"YAAA,IAAMA,EAAUC,SAASC,cAAc,MACvCC,QAAQC,IAAIJ,E","sources":["src/js/modal.js"],"sourcesContent":["const titleEl = document.querySelector(\"h1\")\nconsole.log(titleEl)"],"names":["$40873ecf3c18e122$var$titleEl","document","querySelector","console","log"],"version":3,"file":"index.5eeabdf4.js.map"}
