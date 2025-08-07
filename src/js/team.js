@@ -1,11 +1,12 @@
-import imgUrl1 from './images/team/ivan-logo.jpg';
-import imgUrl2 from './images/team/max-logo.png';
-import imgUrl3 from './images/team/oleg-logo.png';
+import imgUrl1 from '../images/team/ivan-logo.jpg';
+import imgUrl2 from '../images/team/max-logo.png';
+import imgUrl3 from '../images/team/oleg-logo.png';
+
 
   const team = [
     {
       name: 'Nierochron',
-      info: 'Team Lid of our team. Created sections: modal window, time calculator, Google dinosaur, football, 3 numbers',
+      info: 'Team Lead of our team. Created sections: modal window, time calculator, Google dinosaur, football, 3 numbers',
       img: imgUrl1,
     },
     {
@@ -20,24 +21,36 @@ import imgUrl3 from './images/team/oleg-logo.png';
     },
   ];
 
-  const image = document.getElementById('team-photo');
-const nextButton = document.getElementById('team-button-right');
-  console.log(nextButton);
+  const prevButton = document.getElementById('team-button-left');
+  const elImage = document.getElementById('team-photo');
+  const elName = document.getElementById('team-name');
+  const elInfo = document.getElementById('team-info');
+  const nextButton = document.getElementById('team-button-right');
 
   let currentIndex = 0;
 
   function firstImg() {
     const currentPhoto = team[currentIndex];
-    image.src = currentPhoto.img;
-    image.alt = `Фото ${currentPhoto.name}`;
+    elImage.src = currentPhoto.img;
+    elImage.alt = `Фото ${currentPhoto.name}`;
+    elName.textContent = currentPhoto.name;
+    elInfo.textContent = currentPhoto.info;
   }
 
-nextButton.addEventListener('click', () => {
-    console.log("Hello World");
+  prevButton.addEventListener('click', () => {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = team.length - 1;
+    }
+    firstImg();
+  });
+
+  nextButton.addEventListener('click', () => {
     currentIndex++;
     if (currentIndex >= team.length) {
       currentIndex = 0;
     }
     firstImg();
   });
-  firstImg();
+
+firstImg();
