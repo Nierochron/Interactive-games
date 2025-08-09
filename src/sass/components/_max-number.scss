@@ -1,0 +1,33 @@
+.max-number-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin: 40px 0 50px;
+}
+
+.max-number-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
+}
+
+.max-number-input{
+    background-color: #D7D7D7;
+    color: #7E7E7E;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px #00000040;
+    padding: 10px 20px;
+}
+
+.max-number-number{
+    font-size: 17px;
+    text-align: center;
+    margin: 50px 0 40px;
+}
+
+.biggest-number{
+    font-weight: bold;
+}
