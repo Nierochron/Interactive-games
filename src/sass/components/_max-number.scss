@@ -1,18 +1,33 @@
+.max-number {
+    padding: 20px;
+}
+
 .max-number-title {
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  margin: 40px 0 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: 40px 0 50px;
 }
 
 .max-number-list {
     display: flex;
-    justify-content: space-between;
-    padding: 0 12%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: 0;
 }
 
-.max-number-input{
+.max-number-item {
+    display: flex;
+    justify-content: center;
+}
+
+.max-number-input {
+    width: 100%;
+    max-width: 250px;
     background-color: #D7D7D7;
     color: #7E7E7E;
     outline: none;
@@ -20,14 +35,26 @@
     border-radius: 20px;
     box-shadow: 3px 3px 0px 0px #00000040;
     padding: 10px 20px;
+    font-size: 16px;
 }
 
-.max-number-number{
+.max-number-number {
     font-size: 17px;
     text-align: center;
     margin: 50px 0 40px;
 }
 
-.biggest-number{
+.biggest-number {
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .max-number-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .max-number-input {
+        max-width: 100%;
+    }
 }
