@@ -35,7 +35,7 @@ import imgUrl3 from '../images/team/oleg-logo.png';
     elImage.alt = `Фото ${currentPhoto.name}`;
     elName.textContent = currentPhoto.name;
     elInfo.textContent = currentPhoto.info;
-  }
+};
 
   prevButton.addEventListener('click', () => {
     currentIndex--;
