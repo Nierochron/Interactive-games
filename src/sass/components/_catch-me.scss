@@ -1,0 +1,25 @@
+.catch-me-container {
+  position: relative;
+  height: 300px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+#runBtn {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #3498db;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.1s ease;
+}
+
+.catch-me-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin: 40px 0 20px;
+}
