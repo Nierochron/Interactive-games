@@ -19,13 +19,21 @@ a {
 button {
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
+
 img {
  display: block;
  height: auto;
  width: 100%;
  max-width: 100%;
 }
-section{
-  width: 100%;
+
+// section{
+//   width: 100%;
+// }
+
+hr{
+  margin: 0;
+  height: 3px;
 }
