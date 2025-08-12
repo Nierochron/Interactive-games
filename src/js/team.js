@@ -1,6 +1,8 @@
-import imgUrl1 from '../images/team/ivan-logo.jpg';
-import imgUrl2 from '../images/team/max-logo.png';
-import imgUrl3 from '../images/team/oleg-logo.png';
+import imgUrl1 from './images/team/ivan-logo.jpg';
+import imgUrl2 from './images/team/max-logo.png';
+import imgUrl3 from './images/team/oleg-logo.png';
+
+console.log(imgUrl1);
 
 
   const team = [
