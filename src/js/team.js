@@ -1,6 +1,6 @@
-import imgUrl1 from './images/team/ivan-logo.jpg';
-import imgUrl2 from './images/team/max-logo.png';
-import imgUrl3 from './images/team/oleg-logo.png';
+import imgUrl1 from '../images/team/ivan-logo.jpg';
+import imgUrl2 from '../images/team/max-logo.png';
+import imgUrl3 from '../images/team/oleg-logo.png';
 
   const team = [
     {
@@ -20,9 +20,10 @@ import imgUrl3 from './images/team/oleg-logo.png';
     },
   ];
 
-  const image = document.getElementById('team-photo');
+const image = document.getElementById('team-photo');
 const nextButton = document.getElementById('team-button-right');
-  console.log(nextButton);
+const imgTitle = document.querySelector(".team-name");
+const imgInfo = document.querySelector(".team-info");
 
   let currentIndex = 0;
 
@@ -30,10 +31,12 @@ const nextButton = document.getElementById('team-button-right');
     const currentPhoto = team[currentIndex];
     image.src = currentPhoto.img;
     image.alt = `Фото ${currentPhoto.name}`;
+    image.style.width = "300px";
+    imgTitle.textContent = currentPhoto.name;
+      imgTitle.imgInfo = currentPhoto.info;
   }
 
 nextButton.addEventListener('click', () => {
-    console.log("Hello World");
     currentIndex++;
     if (currentIndex >= team.length) {
       currentIndex = 0;
