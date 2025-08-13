@@ -2,6 +2,7 @@ const modal = document.getElementById("welcomeModal");
 const modalClose = document.getElementById("modalClose");
 const body = document.body;
 const html = document.documentElement;
+const saveBtn = document.querySelector(".modal-save-button")
 
 const scrollbarWidth = window.innerWidth - html.clientWidth;
 
@@ -40,3 +41,5 @@ window.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+saveBtn.addEventListener("click", closeModal);
