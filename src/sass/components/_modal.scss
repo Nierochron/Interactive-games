@@ -1,0 +1,89 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: modalFadeIn 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.modal-welcome-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0 0px;
+}
+
+.modal-enter-name-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.modal-input {
+  background-color: #d7d7d7;
+  padding: 10px 90px 10px 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  transition: background-color 300ms ease;
+
+  &:focus {
+    background-color: #e7e7e7;
+  }
+}
+
+.modal-save-button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  box-shadow: 3px 3px 0px 0px #00000040;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    outline: 1px solid rgb(0, 0, 0);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
