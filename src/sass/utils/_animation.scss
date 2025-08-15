@@ -1,0 +1,21 @@
+@keyframes appearanceGrey {
+  0% {color: #ffffff;}
+  100% {color: #d9d9d9;}
+}
+
+@keyframes appearanceGreen {
+  0% {color: #d9d9d9;}
+  100% {color: #00C700;}
+}
+
+@keyframes appearanceBlack {
+  0% {color: #000000;}
+  100% {color: #1d1d1d;}
+}
+
+@keyframes biggerSize {
+  0% {min-width: 107px;
+    min-height: 35px;}
+  100% {min-width: 110px;
+    min-height: 38px;}
+}
