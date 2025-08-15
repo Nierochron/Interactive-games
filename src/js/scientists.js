@@ -24,9 +24,12 @@ const scientists = [
   function render(list) {
     containers.forEach(c => (c.innerHTML = ''));
     list.slice(0, containers.length).forEach((s, i) => {
-      containers[
-        i
-      ].innerHTML = `${s.name}${s.scientistBorn}–${s.scientistDied}`;
+      containers[i].innerHTML = `
+      <div class="scientist-text">
+      <div class="scientist-name">${s.name}</div>
+      <div class="scientist-years">${s.scientistBorn}–${s.scientistDied}</div>
+      </div>
+      `;
     });
   }
 
