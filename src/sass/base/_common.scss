@@ -1,5 +1,12 @@
 body {
   font-family: "Lato", sans-serif;
+  background: url("../images/background.jpg") center/cover no-repeat;
+
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
+
 }
+
 
 @import '~node_modules/modern-normalize/modern-normalize.css';

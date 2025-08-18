@@ -2,13 +2,12 @@
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
-  // outline: dotted red;
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
 
   @media screen and (min-width: 768px) {
     width: 768px;
     max-width: 668px;
-
   }
 
   @media screen and (min-width: 1200px) {
