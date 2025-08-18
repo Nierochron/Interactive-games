@@ -43,10 +43,16 @@
     left: 40%;
     bottom: 0%;
 
-    @media (max-width: 600px) {
-        left: 33%;
+    @media (max-width: 320px){
+        left: 25%;
     }
-    @media (max-width: 767px) {
+
+
+    @media (min-width: 320px) and (max-width: 599px){
+        left: 31%;
+    }
+
+    @media (min-width: 600px) and (max-width: 767px) {
         left: 35%;
     }
 }

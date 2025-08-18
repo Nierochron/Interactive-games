@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 40px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 8;
+}
+
+.header-logo-img {
+  width: 93px;
+  height: 38px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-element {
+  position: relative;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.header-nav-link:hover {
+  color: #555555;
+}
+
+.header-nav-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #c6c6c6;
+  padding: 8px 0;
+  min-width: 150px;
+  display: none;
+  z-index: 7;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-dropdown:hover .header-nav-submenu {
+  display: block;
+}
+
+.header-nav-submenu li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+.header-nav-submenu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.theme-toggle {
+  border: none;
+  background-color: #686868;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #424242;
+}
+
+.header-toggle-icon {
+  font-size: 14px;
+}
+
+.greeting {
+  font-size: 14px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .user-controls {
+    display: none;
+  }
+  .user-info-mobile {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+@media (min-width: 769px) {
+  .user-info-mobile {
+    display: none;
+  }
+}
+
+.header-submenu-link{
+  font-weight: 400;
+  font-size: 14px;
+}
