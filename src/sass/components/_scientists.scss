@@ -1,0 +1,118 @@
+.scientists .container {
+  padding: 0;
+}
+
+.scientists-title {
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;    
+    font-weight: 400;
+    font-style: normal;
+    padding: 36px;
+}
+.scientist {
+    background-color: #d9d9d9;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scientists {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    row-gap: 59px;
+    column-gap: 36px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 36px;
+}
+
+.scientist-text {
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;    
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scientist-name {
+    font-weight: bold;
+}
+
+.scientist-years {
+    font-size: 10px;
+    color: #333;
+}
+
+.scientist-filter-list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    row-gap: 10px;
+    column-gap: 18px;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.scientist-filter-item:nth-child(odd) {
+  justify-self: end;
+}
+.scientist-filter-item:nth-child(even) {
+  justify-self: start;
+}
+
+.scientist-filter-item{
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.scientist-filter-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Montserrat Alternates", sans-serif;    
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    display: inline-flex;   
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    line-height: 1.4;
+    max-width: 500px;
+    max-height: 50px;
+}
+
+.scientist-filter-button:hover {
+  animation: appearanceGrey 0.5s forwards;
+}
+
+.scientist-filter-list .scientist-filter-item.scientist-last {
+  grid-column: 1 / -1;
+  justify-self: center !important;
+}
+
+.scientist-filter-button:active {
+  animation: appearanceGreen 0.5s forwards;
+}
+
+.scientist-filter-button.active,
+.scientist-filter-button.active:hover,
+.scientist-filter-button.active:active {
+  animation: appearanceGreen 0.5s forwards !important;
+}

@@ -1,27 +1,88 @@
+.team-title {
+  text-align: center;
+  margin: 36px 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .team-container{
 display: flex;
 justify-content: space-between;
-
 }
 
-.team-photo{
-    margin-left: auto;
-    margin-right: auto;
+.team-button {
+  margin: auto 92px;
+  width: 50px;
+  height: 100px;
 }
+
+.team-items {
+  width: min(100%, 520px);
+}
+
+.team-photo-container {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.team-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.slide-from-right { transform: translateX(100%); opacity: 0; }
+.slide-from-left  { transform: translateX(-100%); opacity: 0; }
+.slide-to-left    { transform: translateX(-100%); opacity: 0; }
+.slide-to-right   { transform: translateX(100%);  opacity: 0; }
+
 .team-indicators{
     display: flex;
         gap: 10px;
     justify-content: center;
     margin: 20px 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.team-svg-indicators {
+  opacity: .4;
+  transition: opacity .2s, transform .2s;
+  cursor: pointer;
+}
+
+.team-svg-indicators.active {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .team-name{
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
-.team-team-info{
-    text-align: center;}
+.team-info{
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;    
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 36px;
+}
 
+.section-team .container {
+  padding-bottom: 0;
+}
