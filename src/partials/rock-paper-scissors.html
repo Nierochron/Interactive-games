@@ -1,23 +1,23 @@
 <section>
     <div class="container">
-        <p>Каміть - ножиці - папір</p>
-        <ul>
-            <li>
-                <button id="stoneBtn" type="submit"><img src="images/stone.png" alt="stone"></button>
+        <p class="rock-paper-scissors-text">Каміть - ножиці - папір</p>
+        <ul class="rock-paper-scissors-list">
+            <li class="rock-paper-scissors-items">
+                <button class="rock-paper-scissors-btn" id="stoneBtn" type="submit"><img src="images/stone.png" alt="stone"></button>
             </li>
-            <li>
-                <button id="scissorsBtn" type="submit"><img src="images/scissors.png" alt="scissors"></button>
+            <li class="rock-paper-scissors-items">
+                <button class="rock-paper-scissors-btn" id="scissorsBtn" type="submit"><img src="images/scissors.png" alt="scissors"></button>
             </li>
-            <li>
-                <button id="paperBtn" type="submit"><img src="images/paper.png" alt="paper"></button>
+            <li class="rock-paper-scissors-items">
+                <button class="rock-paper-scissors-btn" id="paperBtn" type="submit"><img src="images/paper.png" alt="paper"></button>
             </li>
         </ul>
-        <ul>
-            <li><p>Рахунок:</p></li>
-            <li>Комп’ютер - <span id="computerScore">0</span></li>
-            <li>Ви - <span id="playerScore">0</span></li>
+        <ul class="scoreboard">
+            <li class="scoreboard"><p class="score-text">Рахунок:</p></li>
+            <li class="computer-score">Комп’ютер - <span class="score-value" cid="computerScore">0</span></li>
+            <li class="player-score">Ви - <span class="score-value" id="playerScore">0</span></li>
         </ul>
-        <p id="message">Ви виграли раунд!</p>
-        <button id="computerChoiceBtn" type="submit">Варіант комп'ютера</button>
+        <p class="game-message" id="message">Ви виграли раунд!</p>
+        <button class="computer-choice-btn" id="computerChoiceBtn" type="submit">Варіант комп'ютера</button>
     </div>
 </section>
