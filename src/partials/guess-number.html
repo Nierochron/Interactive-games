@@ -1,8 +1,14 @@
 <section>
 <div class="container">
-    <h2>Вгадай число, яке загадав комп’ютер</h2>
-    <input type="number" name="guess-number" id="guess-number" placeholder="Введіть число">
-    <button type="submit" class="guess-number-btn" data-btnNumber ></button>
-    <p id="result-guess-num"></p>
+    <h2 class="guess-number-title">Вгадай число, яке загадав комп’ютер</h2>
+    <div class="guess-number-section">
+    <input class="guess-number-input" type="number" name="guess-number" id="guess-number" placeholder="Введіть число">
+    <button type="submit" class="guess-number-btn" data-btnNumber >
+        <svg class="guess-number-svg" width="15" height="15">
+            <use xlink:href="./images/games.svg#icon-search"></use>
+            </svg>
+    </button>
+    </div>
+    <p class="guess-number-text" id="result-guess-num"></p>
 </div>
 </section>

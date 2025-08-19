@@ -1,0 +1,51 @@
+.guess-number-input::-webkit-outer-spin-button,
+.guess-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.guess-number-input {
+  -moz-appearance: textfield;
+}
+
+.guess-number-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  right: -20%;
+  top: 50px;
+}
+
+.guess-number-input {
+  padding: 9px 1px 9px 10px;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 3px 3px 3px #b1b1b1;
+  }
+}
+
+.guess-number-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess-number-svg {
+  width: 15px;
+  height: 15px;
+  fill: #ffffff;
+}
