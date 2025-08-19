@@ -1,0 +1,40 @@
+.calculator-container{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.calculator-input,
+.calc-input,
+.calc-result {
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 9px  10px;
+  transition: box-shadow 0.3s;
+}
+
+
+.calculator-btn,
+.calc-btn{
+    width: 40px;
+    height: 40px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    transition: background-color 300ms ease;
+    &:hover{
+        background-color: gray;  
+    }
+}
+
+.calculator-box{
+    display: flex;
+      gap: 15px;
+}
+

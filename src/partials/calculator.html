@@ -1,23 +1,21 @@
 <section>
-    <div class="container">
-        <p class="calculator-text">Калькулятор</p>
-        <input class="calculator-input" type="number" placeholder="Введіть число">
-        <ul class="calculator-list">
-            <li class="calculator-items">
-                <button class="calculator-btn" onclick="calculate('+')">+</button>
-            </li>
-            <li class="calculator-items">
-                <button class="calculator-btn" onclick="calculate('*')">*</button>
-            </li>
-            <li class="calculator-items">
-                <button class="calculator-btn" onclick="calculate('-')">-</button>
-            </li>
-            <li class="calculator-items">
-                <button class="calculator-btn" onclick="calculate('/')">/</button>
-            </li>
-        </ul class="calc-list">
-        <input class="calc-input" type="number" placeholder="Введіть число">
-        <button class="calc-btn" onclick="calculate('=')">=</button>
-        <input class="calc-result" type="number" placeholder="результат" readonly>
+  <div class="container">
+    <hr>
+    <h2 class="section-title">Калькулятор</h2>
+    <div class="calculator-container">
+    <input class="calculator-input" type="number" placeholder="Введіть число" />
+    <div class="calculator-box">
+      <button class="calculator-btn" onclick="calculate('+')">+</button>
+
+      <button class="calculator-btn" onclick="calculate('*')">*</button>
+
+      <button class="calculator-btn" onclick="calculate('-')">-</button>
+
+      <button class="calculator-btn" onclick="calculate('/')">/</button>
     </div>
+    <input class="calc-input" type="number" placeholder="Введіть число" name="calc-input"/>
+    <button class="calc-btn" onclick="calculate('=')" type="button">=</button>
+    <input class="calc-result" type="number" placeholder="результат" readonly name="calc-result"/>
+  </div>
+  </div>
 </section>
