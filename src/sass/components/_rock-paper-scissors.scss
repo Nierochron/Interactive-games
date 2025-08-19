@@ -1,0 +1,38 @@
+
+.rock-paper-scissors-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.rock-paper-scissors-box{
+    display: flex;
+       justify-content: center;
+    gap: 70px;
+}
+
+.rock-paper-scissors-list{
+    display: flex;
+    gap: 30px;
+        margin-bottom: 30px;
+}
+
+.rock-paper-scissors-btn{
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background-color 300ms ease;
+    &:hover{
+        background-color: #7E7E7E;
+    }
+}
+
+
+
+.computer-choice{
+    margin-top: 10px;
+        text-align: center;
+}
+
+.game-message{
+    text-align: center;
+}
